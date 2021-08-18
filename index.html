@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No one</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quizContainer container-fluid well well-lg">
+        <div id="quiz1″ class=" text-center">
+            <h3 style="color:#d14040;position:center;left:80%;top:0%;" align="Center"><span
+                    id="Modern History Of India Quiz part 01 for all Exams">Quiz for all Exams </span><br /><span
+                    id='Modern History Of India Quiz part 01 for all Exams' style="font-size:25px;"></span></h3>
+            <h2 Style="color:#ff0000;position:center;left:80%;top:0%;font-size:25px;" align="center"><samp
+                    id="Sub heading"> Test Quiz</samp></h2>
+        </div>
+        <div class="quiz-container">
+            <div class="question-number">
+                <h3>Question <span class="question-num-value"></span> of <span class="total-question"></span></h3>
+            </div>
+            <div class="question"></div>
+            <div class="options">
+                <div id="1" class="option1" onclick="check(this);"></div>
+                <div id="2" class="option2" onclick="check(this)"></div>
+                <div id="3" class="option3" onclick="check(this)"></div>
+                <div id="4" class="option4" onclick="check(this)"></div>
+            </div>
+            <div class="button">
+                <button type="button" class="btn back" onclick="back()">Back</button>
+                <button type="button" class="btn" onclick="next()">Next</button>
+            </div>
+            <div class="answers-tracker">
+            </div>
+        </div>
+        <div class="quiz-over">
+            <div class="box">
+                <h1>
+                    Good Try!<br>
+                    You Got <span class="correct-answers"></span> out of 5 <span class="total-question2″> </span> answers correct!
+                That's <span class=" percentage"></span>
+                </h1>
+                <button type="button" onclick="tryAgain()">TryAgain</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+
+</body>
+
+</html>
